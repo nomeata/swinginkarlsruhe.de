@@ -1,0 +1,45 @@
+sudo: false
+
+addons:
+  apt:
+    sources:
+    - hvr-ghc
+    packages:
+    - cabal-install-1.22
+    - ghc-7.10.3
+    - alex-3.1.4
+    - happy-1.19.5
+
+cache:
+  bundler: false
+  directories:
+  - $HOME/.ghc/
+  - $HOME/.cabal/bin
+  - $HOME/.cabal/share
+  - $HOME/.cabal/lib
+
+before_install:
+    - openssl aes-256-cbc -K $encrypted_3a42c4e87918_key -iv $encrypted_3a42c4e87918_iv -in travis-deploy-key.enc -out ~/.ssh/id_rsa -d
+    - chmod go-rwx ~/.ssh/id_rsa
+    - export PATH=$HOME/.cabal/bin:$PATH
+    - export PATH=/opt/cabal/1.22/bin:$PATH
+    - export PATH=/opt/alex/3.1.4/bin:$PATH
+    - export PATH=/opt/happy/1.19.5/bin:$PATH
+    - export PATH=/opt/ghc/7.10.3/bin:$PATH
+    - du -sh $HOME/.ghc $HOME/.cabal/bin $HOME/.cabal/lib $HOME/.cabal/share
+
+install:
+    - cabal-1.22 update
+    - cabal-1.22 install Cabal
+    - cabal install pandoc
+
+
+script:
+    - ./build.sh
+
+after_success:
+    - '[ "$TRAVIS_BRANCH" = "master" ] && [ "$TRAVIS_SECURE_ENV_VARS" = "true" ] &&  [ "$TRAVIS_PULL_REQUEST" = "false" ] && ./deploy.sh'
+
+before_cache:
+  - du -sh  $HOME/.ghc $HOME/.cabal/bin $HOME/.cabal/lib $HOME/.cabal/share
+
