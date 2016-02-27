@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="de-DE">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="de-DE">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="de-DE">
+  <!--<![endif]-->
+  <head>
+    <!-- <link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/> -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width"/>
+
+    <title>Swing in Karlsruhe</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Bitter:700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="style.css" type="text/css" media="all"/>
+
+    <link rel="canonical" href="http://www.swinginkarlsruhe.de/"/>
+    <link rel="shortlink" href="http://www.swinginkarlsruhe.de/"/>
+
+    <!-- OpenGraph Tags (added by 2-Click Social Media Buttons) -->
+    <meta property="og:site_name" content="Swing in Karlsruhe"/>
+    <meta property="og:locale" content="de_DE"/>
+    <meta property="og:locale:alternate" content="de_DE"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Swing und Lindy Hop tanzen in Karlsruhe"/>
+    <meta property="og:url" content="http://www.swinginkarlsruhe.de/"/>
+    <!-- /OpenGraph Tags -->
+
+    <style type="text/css">
+      .site-header {
+	      background: url(cropped-HFD_31011.jpg) no-repeat scroll top;
+	      background-size: 1600px auto;
+      }
+      @media (max-width: 767px) {
+	      .site-header {
+		      background-size: 768px auto;
+	      }
+      }
+      @media (max-width: 359px) {
+	      .site-header {
+		      background-size: 360px auto;
+	      }
+      }
+	      .site-title,
+      .site-description {
+	      color: #dddcc1;
+      }
+    </style>
+  </head>
+  <body class="home page page-template-default single-author">
+$for(include-before)$
+$include-before$
+$endfor$
+
+    <div id="page" class="hfeed site">
+      <header class="site-header" role="banner">
+	<a class="home-link" href="http://www.swinginkarlsruhe.de/" title="Swing in Karlsruhe" rel="home">
+	  <h2 class="site-description"></h2>
+	</a>
+	<div id="navbar" class="navbar">
+	  <nav id="site-navigation" class="navigation main-navigation" role="navigation">
+	    <button class="menu-toggle">Men&#xFC;</button>
+	    <a class="screen-reader-text skip-link" href="#content" title="Zum Inhalt springen">Zum Inhalt springen</a>
+	    <div>
+	      <ul class="nav-menu">
+	        <!--
+	        <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#top">Home</a></li>
+		-->
+		<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#social">Social Dance</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#kurse">Tanzkurse</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#news">Informationsquellen</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#tipps">Tipps</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#kontakt">Kontakt</a></li>
+	      </ul>
+	    </div>
+	  </nav>
+	</div>
+      </header>
+
+      <div id="main" class="site-main">
+	<div id="primary" class="content-area">
+          <div class="entry-content">
+	    $body$
+
+	    $for(include-after)$
+	    $include-after$
+	    $endfor$
+
+	    <div id="socialshareprivacy"/>
+	  </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script type='text/javascript' src='functions.js'></script>
+
+    <script type="text/javascript" src="socialshareprivacy/jquery.socialshareprivacy.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($$){
+	if($$('#socialshareprivacy').length > 0){
+	  $$('#socialshareprivacy').socialSharePrivacy({
+	    "css_path"  : "socialshareprivacy/socialshareprivacy.css",
+	    "lang_path" : "socialshareprivacy/lang/",
+	    "language"  : "de"
+	  });
+	}
+      });
+    </script>
+  </body>
+</html>
