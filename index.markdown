@@ -23,13 +23,13 @@ Aktuelle Termine in **Karlsruhe**:
 
 ### Februar 2016 ###
 
- * Mittwoch, 17. Februar: um 20.00 Uhr Social im Schlachthof
- * 27.2.: Lindy-Hop Workshop in Bad Wildbad: [schaust du hier](http://www.bad-wild-bad-hop.de/)
+ * 27.2.: Lindy-Hop Workshop *incl. level for absolute beginners* in Bad Wildbad: [schaust du hier](http://www.bad-wild-bad-hop.de/)
 
-### März 2016 ### 
+### März 2016 ###
 
  * Mittwoch, 2. März: um 20.00 Uhr Social im Schlachthof
- * Samstag 19.3.: La Nuit Bohème im Tempel: [mehr](http://www.kulturverein-tempel.de/index.php?id=679)
+ * Samstag, 5. März: „Shim Sham“ Workshop in Freiburg von 12.00-15.30 Uhr bei Ralf & Johannes. Nähere Informationen unter <info@tanzraum-freiburg.de>
+ * Samstag, 19. März: [La Nuit Bohème im Tempel](http://www.kulturverein-tempel.de/index.php?id=679)
 
 Lindy Hop – Tanzkurse in Karlsruhe {#kurse}
 ----------------------------------
